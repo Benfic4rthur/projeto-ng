@@ -1,0 +1,17 @@
+<div style="background-color: green;" *ngIf="trueOrFalse; else meuTemplate"> Sou uma div</div>
+<ng-template #meuTemplate>
+  <div style="background-color: red;">Sou outra div</div>
+</ng-template>
+
+<br><br>
+<ng-container *ngIf="trueOrFalse; then meuTemplate; else meuOutroTemplate"></ng-container>
+
+<ng-template #meuTemplate>
+  <div style="background-color: green;">Sou a div "then"</div>
+</ng-template>
+
+<ng-template #meuOutroTemplate>
+  <div style="background-color: red;">Sou a div "else"</div>
+</ng-template>
+
+<button (click)="trueOrFalse = !trueOrFalse">Muda div</button>
