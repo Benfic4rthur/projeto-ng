@@ -16,12 +16,6 @@ export class AppComponent {
     {nome: 'Eduardo', idade: 40},
     {nome: 'Fernanda', idade: 35},
     {nome: 'Gabriel', idade: 22},
-    {nome: 'Helena', idade: 27},
-    {nome: 'Igor', idade: 29},
-    {nome: 'Juliana', idade: 32},
-    {nome: 'Karen', idade: 26},
-    {nome: 'Leonardo', idade: 24},
-    {nome: 'Mariana', idade: 31}
 ];
 
 pessoaSelecionada(index: number){
