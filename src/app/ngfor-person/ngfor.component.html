@@ -1,0 +1,33 @@
+<!-- <div class="list"> 
+    <div 
+    class="item" 
+    *ngFor="
+    let pessoa of listPessoas; 
+    let posicaoPessoa = index; 
+    let isOdd = odd; 
+    let isFirst = first; 
+    let isLast = last;"
+    [class.item--odd]="isOdd" 
+    [class.item--highlighted]="indexPessoaselecionada === posicaoPessoa"
+    (click)="pessoaSelecionada(posicaoPessoa)" >
+ aqui existem varias possibilidades e não apenas o odd que é o impar, pode ser o even que é o par e o first que é o primeiro e o last que é o último 
+        <p class="item__name">{{posicaoPessoa + 1}} - {{ pessoa.nome }}</p>
+        <p class="item__age">{{ pessoa.idade }} anos</p>
+        <p class="item__age" *ngIf="isFirst">É o primeiro</p>
+        <p class="item__age" *ngIf="isLast">É o ultimo</p>
+        
+    </div>
+  </div> -->
+  <div class="list">
+    <div 
+    class="item" 
+    [class.item--odd]="isOdd" 
+    [class.item--highlighted]="isSelected"
+    (click)="pessoaSelecionada()" >
+    <!-- aqui existem varias possibilidades e não apenas o odd que é o impar, pode ser o even que é o par e o first que é o primeiro e o last que é o último -->
+        <p class="item__name">{{personIndex + 1}} - {{ personName }}</p>
+        <p class="item__age">{{ personAge }} anos</p>
+        <p class="item__age" *ngIf="isFirst">É o primeiro</p>
+        <p class="item__age" *ngIf="isLast">É o ultimo</p>
+    </div>
+  </div>

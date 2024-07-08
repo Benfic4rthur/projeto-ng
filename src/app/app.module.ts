@@ -5,13 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { NgifComponent } from './ngif/ngif.component';
-import { NgforComponent } from './ngfor/ngfor.component';
+import { NgforComponent } from './ngfor-person/ngfor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgifComponent,
-    NgforComponent
+    NgforComponent,
   ],
   imports: [
     BrowserModule,

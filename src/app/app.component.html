@@ -1,2 +1,12 @@
-<app-ngif></app-ngif>
-<app-ngfor></app-ngfor>
+<app-ngfor 
+*ngFor="let pessoa of listPessoas; let i = index; let isOdd = odd; let isFirst = first; let isLast = last;" 
+[personName] = "pessoa.nome" 
+[personAge] = "pessoa.idade"
+[personIndex] = "listPessoas.indexOf(pessoa)" 
+[isFirst] = "isFirst"
+[isLast] = "isLast"
+[isOdd] = "isOdd"
+[isSelected] = "indexPessoaselecionada === i"
+(personSelected) = "pessoaSelecionada(i)"
+></app-ngfor>
+<!-- <app-ngif></app-ngif> -->

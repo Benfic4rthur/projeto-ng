@@ -6,5 +6,26 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  indexPessoaselecionada: number | undefined;
+  listPessoas = [
+    {nome: 'Arthur', idade: 33},
+    {nome: 'Luiz', idade: 28},
+    {nome: 'Natacha', idade: 25},
+    {nome: 'Bruna', idade: 25},
+    {nome: 'Carla', idade: 30},
+    {nome: 'Eduardo', idade: 40},
+    {nome: 'Fernanda', idade: 35},
+    {nome: 'Gabriel', idade: 22},
+    {nome: 'Helena', idade: 27},
+    {nome: 'Igor', idade: 29},
+    {nome: 'Juliana', idade: 32},
+    {nome: 'Karen', idade: 26},
+    {nome: 'Leonardo', idade: 24},
+    {nome: 'Mariana', idade: 31}
+];
 
+pessoaSelecionada(index: number){
+  console.log((index) + 1);
+  this.indexPessoaselecionada = index;
+}
 }
